@@ -1,3 +1,175 @@
+html {
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+  
+li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.main-box {
+    z-index: -1;
+    max-width: 800px;
+    height: 500px;
+    background-color: rgba(80, 140, 98, 0.8);
+    margin: 100px auto 0;
+    border-radius: 30px;
+    box-shadow: 5px 5px 20px 2px #355035;
+}
+
+.todo-style {
+    overflow: hidden;
+    margin-top: 30px;
+    text-align: center;
+    z-index: -1;
+    max-width: 800px;
+    height: auto;
+    background-color: rgba(165, 207, 178, 0.5);
+    margin: 50px auto 0;
+    border-radius: 30px;
+    transition:height 0.3s ease-out;
+}
+
+.todo-input {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    width: 15em;
+    border: 0;
+    outline: none;
+    transition: padding 0.3s 0.2s ease;
+}
+
+#todo-form {
+
+}
+
+#todo-list {
+    margin: 10px auto 0px;
+}
+
+.todo-input::placeholder { color:#567756; text-align: center; }
+
+#login-form {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.login-input {
+    /* background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    border-style: dashed;
+    border-color: bisque; */
+    background: 0;
+    border: 0;
+    outline: none;
+    transition: padding 0.3s 0.2s ease;
+    color: aliceblue;
+}
+
+.todoButton {
+    background: 0;
+    border: 0;
+}
+
+input::placeholder {color:#ccc;}
+
+.login-btn {
+    background-color: aliceblue;
+    border-radius: 30px;
+    border-style: none;
+    box-shadow : 1px 1px 1px gray;
+    transition-duration: 0.3s;
+}
+
+.line {
+    width: 173px;
+    height: 1px;
+    position: absolute;
+    left: 48%;
+    top: 155px;
+    transform: translate(-50%, -50%);
+    background: rgba(189, 210, 189, 0.8);
+}
+
+.login-btn:hover {
+    transition: .3s;
+    transform: scale(1);
+    display: inline-block;
+    opacity: 50%;
+}
+
+#clock {
+    font-family: 'Catamaran', sans-serif !important;
+    position: absolute;
+    color:azure;
+    text-align: center;
+    font-size: 160px;
+    margin: 0px auto;
+
+    left: 50%;
+    top: 325px;
+    transform: translate(-50%, -50%);
+}
+
+#greeting {
+    text-align: center;
+    position: relative;
+    color: azure;
+    text-shadow: 2px 2px 5px #355035;
+    letter-spacing: 10px;
+    padding: 30px 0px;
+}
+
+#weather {
+    position: absolute;
+    left: 50%;
+    top: 415px;
+    transform: translate(-50%, -50%);
+    color: azure;
+}
+
+#quote {
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    top: 500px;
+    transform: translate(-50%, -50%);
+    color: azure;
+}
+
 .hidden {
     display: none;
+}
+
+div.clickEffect{
+	position:fixed;
+	box-sizing:border-box;
+	border-style:solid;
+	border-color:#ffffff;
+	border-radius:50%;
+	animation:clickEffect 0.5s ease-out;
+	z-index:99999;
+}
+
+@keyframes clickEffect{
+	0% {
+		opacity:1;
+		width:0.5em; height:0.5em;
+		margin:-0.25em;
+		border-width:0.5rem;
+	}
+	100% {
+		opacity:0.2;
+		width:15em; height:15em;
+		margin:-7.5em;
+		border-width:0.03rem;
+	}
 }

@@ -34,6 +34,7 @@ function paintTodo(newTodo) {
     const span = document.createElement('span');
     const button = document.createElement('button');
     button.innerText = '❌';
+    button.className = 'todoButton';
 
     li.id = newTodo.id;
     span.innerText = newTodo.text;
@@ -51,7 +52,6 @@ function deleteTodo(event) {
     todos = todos.filter(todo => todo.id !== parseInt(li.id));
     saveTodos();
 }
-
 
 todoForm.addEventListener('submit', handleTodoSubmit);
 

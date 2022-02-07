@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- 코로나 확진 현황 추가 / 노래 추가 등 기능 고려 -->
         <title>JS</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+        <script src="js/clickevent.js"></script>
         <meta charset="UTF-8">
     </head>
     <body>
-        <form id="login-form">
-            <input required maxlength="15" 
-                type="text" placeholder="What is your name?" />
-            <button>LOGIN</button>
-        </form>
+        <div class="main-box">
+            <form id="login-form">
+                <input class="login-input" required maxlength="15" 
+                    type="text" placeholder="What is your name?" />
+                <span class="line"></span>
+                <button class="login-btn">LOGIN</button>
+            </form>
 
-        <h2 id="clock">00:00</h2>
-        <h1 id="greeting" class="hidden"></h1>
+            <h1 id="greeting" class="hidden"></h1>
+            <h2 id="clock">00:00</h2>
 
-        <form id="todo-form">
-            <input type="text" placeholder="Write a To do and Press Enter" required />
-        </form>
-        <ul id="todo-list"></ul>
+            <div id="weather">
+                <span></span>
+                <span></span>
+            </div>
 
-        <div id="quote">
-            <span></span>
-            <span></span>
+            <div id="quote">
+                <span></span>
+                <span></span>
+            </div>
         </div>
 
-        <div id="weather">
-            <span></span>
-            <span></span>
+        <div class="todo-style">
+            <form id="todo-form">
+                <input class="todo-input" type="text" placeholder="Write a To-do and Press Enter" required />
+            </form>
+            <ul id="todo-list"></ul>
         </div>
 
         <script src="js/greetings.js"></script>
