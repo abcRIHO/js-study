@@ -12,6 +12,10 @@ img {
 li {
     list-style: none;
     padding-bottom: 10px;
+    justify-content: space-between;
+    display: flex;
+    word-break: break-all;
+    
 }
 
 .main-box {
@@ -53,6 +57,7 @@ li {
 
 #todo-list {
     margin: 10px auto 0px;
+    width: 30%;
 }
 
 .todo-input::placeholder { color:#567756; text-align: center; }
@@ -155,7 +160,7 @@ div.clickEffect{
 	border-style:solid;
 	border-color:#ffffff;
 	border-radius:50%;
-	animation:clickEffect 0.5s ease-out;
+	animation:clickEffect 0.3s ease-out;
 	z-index:99999;
 }
 
